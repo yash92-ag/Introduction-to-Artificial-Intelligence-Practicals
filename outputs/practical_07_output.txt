@@ -1,0 +1,11 @@
+Regression Equation: Price = 0.0458 * HouseSize + 2.6410
+R² Score: 0.9989
+Predicted price for 1700 sqft: 80.43 Lakh
+Decision Tree Test Accuracy: 100.0%
+
+Decision Tree Rules:
+ |--- CreditScore <= 665.00
+|   |--- class: No
+|--- CreditScore >  665.00
+|   |--- class: Yes
+

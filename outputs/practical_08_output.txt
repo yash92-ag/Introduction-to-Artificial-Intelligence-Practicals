@@ -1,0 +1,47 @@
+Store Dataset:
+   StoreID  DailyFootfall  DailyRevenue_Th
+0    St01            850              120
+1    St02            900              130
+2    St03            200               35
+3    St04            180               30
+
+Standardized Features (First 4 rows):
+ [[ 1.00915678  0.97540133]
+ [ 1.18496806  1.23007531]
+ [-1.27638993 -1.18932747]
+ [-1.34671444 -1.31666446]]
+[REASON FOR STANDARDIZATION] Footfall (hundreds) and Revenue (thousands) operate on differing numeric magnitudes.
+Without Z-score scaling, footfall would dominate Euclidean distance metrics.
+
+k = 1: Inertia = 20.0000
+k = 2: Inertia = 3.4571
+k = 3: Inertia = 0.0797 <-- Sharp elbow bend detected (Optimal k = 3)
+k = 4: Inertia = 0.0372
+k = 5: Inertia = 0.0266
+k = 6: Inertia = 0.0161
+k = 7: Inertia = 0.0074
+
+Store Segment Assignments:
+  StoreID  DailyFootfall  DailyRevenue_Th  Segment
+0    St01            850              120        1
+1    St02            900              130        1
+2    St03            200               35        0
+3    St04            180               30        0
+4    St05            500               70        2
+5    St06            520               75        2
+6    St07            870              125        1
+7    St08            210               32        0
+8    St09            510               72        2
+9    St10            890              128        1
+
+Cluster Centroids (Original Metric Units):
+Cluster 0 (Low Footfall): Footfall = 196.7, Revenue = 32.3K
+Cluster 1 (Tier-1 Flagship): Footfall = 877.5, Revenue = 125.8K
+Cluster 2 (Mid Performers): Footfall = 510.0, Revenue = 72.3K
+
+Mean Footfall & Revenue by Segment:
+         DailyFootfall  DailyRevenue_Th
+Segment                                
+0           196.666667        32.333333
+1           877.500000       125.750000
+2           510.000000        72.333333

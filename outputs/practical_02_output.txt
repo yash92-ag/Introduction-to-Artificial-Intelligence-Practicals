@@ -1,0 +1,10 @@
+Central -> ['North', 'West']
+North -> ['Central', 'NorthEast', 'East']
+West -> ['Central', 'SouthWest']
+NorthEast -> ['North']
+East -> ['North', 'SouthEast']
+SouthWest -> ['West']
+SouthEast -> ['East']
+BFS traversal order: ['Central', 'North', 'West', 'NorthEast', 'East', 'SouthWest', 'SouthEast']
+DFS traversal order: ['Central', 'North', 'NorthEast', 'East', 'SouthEast', 'West', 'SouthWest']
+Path from Central to SouthEast: Central -> North -> East -> SouthEast

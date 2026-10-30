@@ -1,0 +1,36 @@
+Initial Clean Board Layout:
+   |   |   
+---+---+---
+   |   |   
+---+---+---
+   |   |   
+
+[OPTIMIZATION VERIFIED] Alpha-Beta Pruning integrated.
+Minimax evaluates all game-tree branches and prunes redundant subtrees when beta <= alpha.
+
+--- Simulated Game Trace ---
+Human plays at 4:
+AI counters at 0:
+ O |   |   
+---+---+---
+   | X |   
+---+---+---
+   |   |   
+---------------
+Human plays at 2:
+AI counters at 6:
+ O |   | X 
+---+---+---
+   | X |   
+---+---+---
+ O |   |   
+---------------
+Human plays at 7:
+AI counters at 3:
+ O |   | X 
+---+---+---
+ O | X |   
+---+---+---
+ O | X |   
+---------------
+Result: AI Wins! Line detected across [0, 3, 6].

@@ -1,0 +1,29 @@
+Total probability of word 'free' P(Free): 0.300
+P(Spam | word='free') = 0.80 (80.0%)
+Sample Emails Dataset (First 4 rows):
+                                      Text Label
+0                    win a free prize now  spam
+1        claim your free lottery winnings  spam
+2  meeting scheduled for tomorrow at 10am   ham
+3       please review the attached report   ham
+
+Vocabulary Size: 48
+Feature matrix shape: (10, 48)
+Prediction for 'claim your free reward today': spam
+
+Test Accuracy: 1.00
+
+Confusion Matrix [labels=['spam', 'ham']]:
+ [[2 0]
+ [0 1]]
+
+Classification Report:
+               precision    recall  f1-score   support
+
+         ham       1.00      1.00      1.00         1
+        spam       1.00      1.00      1.00         2
+
+    accuracy                           1.00         3
+   macro avg       1.00      1.00      1.00         3
+weighted avg       1.00      1.00      1.00         3
+
